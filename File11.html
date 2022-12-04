@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        caption {
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            background-color: aquamarine;
+        }
+        table {
+            width: 500px;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        tr:nth-child(odd) {
+            background-color: pink;
+        }
+        tr:nth-child(even) {
+            background-color: beige;
+        }
+        #one th {
+            background-color: aliceblue;
+        } 
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Students Details</caption>
+        <thead>
+            <tr id="one">
+                <th>Name</th>
+                <th>Mobile No</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Abuzar Mahmood</td>
+                <td>84201 75808</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Atir Mahmood</td>
+                <td>91237 41599</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Anas Mahmood</td>
+                <td>70037 76215</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Mahmood Alam</td>
+                <td>70442 13366</td>
+                <td>52</td>
+            </tr>
+            <tr>
+                <td>Roshan Ara</td>
+                <td>98319 14077</td>
+                <td>47</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

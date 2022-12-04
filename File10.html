@@ -6,11 +6,15 @@
     <style>
         caption {
             border: 2px solid black;  
+            width: 600px;
+            background-color: antiquewhite;
+            /*  css border collapse property is not working with caption tag */
         }
         table {
             width : 600px;
             border : 2px solid black;
             border-collapse : collapse;
+            /* css border collapse property works only inside the border of the table just like in caption border collapse is not working */
         }
         td,th {
             padding : 5px;
@@ -20,17 +24,63 @@
         }
         /* styling odd and even rows */
         tr:nth-child(odd) {
+            /* some css properties doesn't work with tr tag like width but height works*/
+            height: 50px;
             background-color: darkgray;
         }
         tr:nth-child(even) {
             background-color: burlywood;
+            height: 50px;
         }
         .one tr{
             border-collapse: collapse;
         }
         .one th{
             background-color: pink;
-        }
+         } 
+         /* The reason of making class and using it is to increase the value of 0 0 0 0 other wise because of line 25 it would have remianed darkgray. */
     </style>
 </head>
 <body>
+    <table>
+        <caption><h2>Students Details</h2></caption>
+        <thead>
+            <!-- many css property like width & height doesn't work with thead & tbody tag-->
+            <tr class="one">
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Abuzar Mahmood</td>
+                <td>1655039</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>Atir Mahmood</td>
+                <td>1655042</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Anas Mahmood</td>
+                <td>1655056</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Mahmood Alam & Roshan Ara</td>
+                <td>1655037</td>
+                <td>52</td>
+            </tr>
+            <tr>
+                <td>1655081</td>
+                <td>47</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <!-- So rowspan and colspan are attributes which when used would collape all the columns of the row and all the rows of the columns  -->
+</body>
+</html>
