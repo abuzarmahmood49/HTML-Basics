@@ -1,0 +1,41 @@
+<!-- Here we will stdy about inhertance of css properties by html tags -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+    <style>
+        #one {
+            width: 500px;
+            height: 500px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: blueviolet;
+            /* so here we can see that the non of the css properties have been inherited by the children tags of the div tags */
+            /* but properties like color, background-color & padding would be inherited */
+            color: green;
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+        h1 {
+            /* so if we want a property which is not getting inherited to be inherited then we will use the value inherit in all such css properties which doesn't get inherited */
+            border: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div id="one">
+        <h1>Abuzar Mahmood</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur saepe nobis vitae. Perferendis adipisci soluta et consectetur saepe voluptas enim dolorem a! Natus reiciendis explicabo impedit, velit nisi rem perspiciatis vero, exercitationem corporis accusamus vel error aliquam eius sed. Nobis corrupti a culpa non obcaecati iste perferendis iure corporis.
+        </p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorem dolorum officiis ex maiores autem molestias consequatur molestiae ducimus ea esse placeat modi dolor voluptate nobis itaque sit, expedita deleniti.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
